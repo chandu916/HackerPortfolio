@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Orbitron:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg-primary: #050505;
+  --surface-primary: rgba(14, 16, 16, 0.8);
+  --surface-secondary: rgba(10, 12, 13, 0.74);
+  --accent-primary: #00ff9f;
+  --accent-secondary: #00e5ff;
+  --text-primary: rgba(241, 255, 249, 0.95);
+  --text-muted: rgba(168, 196, 188, 0.82);
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+html {
+  background: var(--bg-primary);
+}
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body,
+button,
+input,
+textarea {
+  cursor: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(0, 255, 159, 0.18);
+}
+
+@media (pointer: coarse) {
+  body,
+  button,
+  input,
+  textarea {
+    cursor: auto;
+  }
+}
